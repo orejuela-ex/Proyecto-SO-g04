@@ -12,3 +12,8 @@ Luna Pachon
 |---|---|---|
 | Debian | Alma Linux | Rocky Linux |
 
+
+## Conclusiones
+
+## Uso de inteligencia artificial
+
