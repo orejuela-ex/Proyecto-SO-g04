@@ -1,8 +1,8 @@
-# Ficha de Verificación de Versiones - Grupo 04
+# Ficha de Verificación - Grupo 04
 
 **Fecha de consulta:** 17 de noviembre de 2026
 
-## 1. Máquina Virtual Gráfica (`g04-grafica`)
+## 1. Máquina Virtual Gráfica
 * **Distribución asignada:** Debian (con entorno de escritorio)
 * **Versión elegida:** Debian 13 (Trixie) - Estable
 * **Arquitectura:** x86_64 (`amd64`)
@@ -10,7 +10,7 @@
 * **Fuente oficial de descarga:** https://www.debian.org/distrib/
 * **Verificación de integridad:** Archivo `SHA256SUMS` / `SHA512SUMS` desde el servidor oficial de Debian.
 
-## 2. Máquina Virtual de Consola (`g04-consola`)
+## 2. Máquina Virtual de Consola 
 * **Distribución asignada:** AlmaLinux (instalación mínima / sin entorno gráfico)
 * **Versión elegida:** AlmaLinux 9.6 / 10 (Estable)
 * **Arquitectura:** x86_64
@@ -18,7 +18,7 @@
 * **Fuente oficial de descarga:** https://almalinux.org/get-almalinux/
 * **Verificación de integridad:** Archivo `CHECKSUM` (SHA256) desde el espejo oficial de AlmaLinux.
 
-## 3. Imagen Base para Contenedores (`Dockerfile`)
+## 3. Imagen Base para Contenedores 
 * **Imagen asignada:** Rocky Linux
 * **Etiqueta (Tag) elegida:** `rockylinux:9`
 * **Arquitectura:** `linux/amd64`
