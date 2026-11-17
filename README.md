@@ -1,4 +1,4 @@
-# Proyecto-so-g04
+# Proyecto final SO 
 Proyecto Final SO Grupo 4
 # Objetivo
 Montar dos máquinas virtuales con Linux en VirtualBox, configurarlas, publicar en Docker Hub una imagen propia, desplegarla en Kubernetes y contar lo que hicimos en este sitio.
