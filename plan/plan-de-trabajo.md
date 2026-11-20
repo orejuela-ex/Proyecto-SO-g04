@@ -15,7 +15,7 @@
 | 0 · Arranque | jueves 19 de noviembre, 11:55 p. m. | Repositorio público con la carpeta plan |
 | 1 · Montaje | jueves 26 de noviembre | Dos VMs, red, SSH e instantáneas |
 | 2 · Servicios | jueves 10 de diciembre | Usuarios, firewall, scripts, procesos y Docker |
-| 3 · Servicios | jueves 17 de diciembre | Docker Hub, Kubernetes y sitio completo |
+| 3 · Cierre | jueves 17 de diciembre | Docker Hub, Kubernetes y sitio completo |
 | 4 · Cierre | Viernes 18 de diciembre | Sustentacion|
 
 
