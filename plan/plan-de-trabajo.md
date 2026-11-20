@@ -10,7 +10,7 @@
 
 ## Fechas de los sprints
 
-| Sprint | Cierre (Santander) | Qué entregamos |
+| Sprint | Cierre | Qué entregamos |
 |---|---|---|
 | 0 · Arranque | jueves 19 de noviembre, 11:55 p. m. | Repositorio público con la carpeta plan |
 | 1 · Montaje | jueves 26 de noviembre | Dos VMs, red, SSH e instantáneas |
