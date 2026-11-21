@@ -1,0 +1,10 @@
+---
+---
+@import "{{ site.theme }}";
+
+.page-header { background-color: #1E2A4A; background-image: linear-gradient(120deg, #1E2A4A, #E8272A); }
+.page-header::before { content: ""; display: block; width: 78px; height: 109px; margin: 0 auto 1.2rem; padding: 8px; background: #fff url("{{ '/logo.png' | relative_url }}") center / contain no-repeat; background-origin: content-box; border-radius: 8px; }
+.project-name { font-size: 2.2rem; }
+.project-tagline::after { content: "Ejemplo pedagógico del curso Sistemas Operativos 750001C. No es un sitio oficial de la Universidad del Valle."; display: block; max-width: 36rem; margin: 1.2rem auto 0; padding: 0.6rem 1rem; border: 2px solid #fff; border-radius: 6px; background: rgba(255,255,255,0.15); font-size: 1rem; font-weight: 600; color: #fff; }
+.main-content h2 { color: #1E2A4A; border-bottom: 3px solid #E8272A; padding-bottom: 0.3rem; }
+.main-content table th { background: #1E2A4A; color: #fff; }
