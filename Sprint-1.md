@@ -1,4 +1,7 @@
-
+---
+layout: default
+title: Sprint 1 · Montaje
+---
 # Sprint 1 · Montaje
 
 > **Página de ejemplo.** Muestra cómo se ve una página de sprint bien hecha: un apartado por cada punto, con lo que se hizo, los comandos, la captura y una explicación corta. Las capturas se describen entre corchetes porque este sitio no las incluye; en su sitio van las imágenes reales, completas, con el prompt y la fecha. [Volver al inicio](./)
