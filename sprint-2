@@ -1,13 +1,44 @@
-# Sprint 2 - Scripts de Administración y Automatización
+---
+layout: default
+title: Sprint 2 · Servicios
+---
 
-Scripts en Bash desarrollados para la administración básica, auditoría y respaldo en **Debian 13 (Trixie)** y **AlmaLinux 9**.
+# Sprint 2 · Servicios
 
-## Contenido
-- `auditoria.sh`: Genera un reporte del estado del sistema (SO, kernel, RAM, disco, red y procesos).
-- `usuarios.sh`: Automatiza la creación de grupos, usuarios y directorios compartidos con permisos seguros.
-- `respaldo.sh`: Crea copias comprimidas `.tar.gz` con fecha y limpia respaldos antiguos.
+Video del sprint (4 min): (enlace de YouTube)
 
-## Uso en las VMs
-```bash
-chmod +x *.sh
-sudo ./auditoria.sh
+## 1. Usuarios y grupo
+Qué hicimos: 
+Comandos: 
+Captura: 
+Explicación: 
+
+## 2. sudo y permisos
+(Grupo de administradores en AlmaLinux: ...)
+
+## 3. Firewall
+
+## 4. Llave SSH y actualización
+
+## 5. Script gráfico
+Enlace al código en el repositorio: 
+
+## 6. Script de consola
+Enlace al código: 
+Caso que funciona / caso que falla: 
+
+## 7. Procesos
+
+## 8. Docker Engine
+Guía oficial usada y por qué aplica a AlmaLinux: 
+
+## Código del sprint
+Comandos: `echo`, `cat`, `date`
+
+## Errores encontrados
+| Error | Causa probable | Solución | Fuente (título, enlace, fecha de consulta) |
+|---|---|---|---|
+
+## Lo que hizo cada integrante
+| Integrante | Qué hizo | Commits |
+|---|---|---|
