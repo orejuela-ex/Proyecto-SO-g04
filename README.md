@@ -12,6 +12,12 @@ Montar dos máquinas virtuales con Linux en VirtualBox, configurarlas, publicar 
 | VM gráfica | VM de consola | Imagen base del Dockerfile |
 |---|---|---|
 | Debian | Alma Linux | Rocky Linux |
+## Páginas del proyecto
+
+- [Sprint 0 · Arranque, paso a paso](sprint-0.md)
+- [Sprint 1 · Montaje](sprint-1.md)
+- [Sprint 2 · Servicios](sprint-2/README.md)
+- [Sprint 3 · Cierre](sprint-3.md)
 
 
 ## Conclusiones
