@@ -1,0 +1,13 @@
+# Sprint 2 - Scripts de Administración y Automatización
+
+Scripts en Bash desarrollados para la administración básica, auditoría y respaldo en **Debian 13 (Trixie)** y **AlmaLinux 9**.
+
+## Contenido
+- `auditoria.sh`: Genera un reporte del estado del sistema (SO, kernel, RAM, disco, red y procesos).
+- `usuarios.sh`: Automatiza la creación de grupos, usuarios y directorios compartidos con permisos seguros.
+- `respaldo.sh`: Crea copias comprimidas `.tar.gz` con fecha y limpia respaldos antiguos.
+
+## Uso en las VMs
+```bash
+chmod +x *.sh
+sudo ./auditoria.sh
