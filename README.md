@@ -5,7 +5,7 @@ Montar dos máquinas virtuales con Linux en VirtualBox, configurarlas, publicar 
 ## Integrantes
 - Juan Esteban Orejuela
 - Laura Guetio
-- Luna cachona
+- Luna Pachon
 
 # Distribución del grupo
 
