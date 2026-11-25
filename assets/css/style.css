@@ -1,13 +1,21 @@
 ---
 ---
+
 @import "{{ site.theme }}";
 
-
+/* ENCABEZADO */
 .page-header {
-  background-color: #0B1530;
-  background-image: linear-gradient(120deg, #0B1530, #1E2A4A, #E8272A);
+  background-color: #090611;
+  background-image: linear-gradient(
+    120deg,
+    #090611,
+    #1B1033,
+    #482080,
+    #7626E8
+  );
 }
 
+/* LOGO */
 .page-header::before {
   content: "";
   display: block;
@@ -18,36 +26,48 @@
   background: #fff url("{{ '/logo.png' | relative_url }}") center / contain no-repeat;
   background-origin: content-box;
   border-radius: 10px;
-  border: 2px solid #65C8FF;
+  border: 2px solid #B65CFF;
+  box-shadow: 0 0 15px rgba(182, 92, 255, 0.5);
 }
 
+/* NOMBRE DEL PROYECTO */
 .project-name {
   font-size: 2.2rem;
-  color: #fff;
-  text-shadow: 0 0 10px #65C8FF;
+  color: #F4F0FF;
+  text-shadow: 0 0 12px #7626E8;
 }
 
+/* AVISO */
 .project-tagline::after {
   content: "Ejemplo pedagógico del curso Sistemas Operativos 750001C. No es un sitio oficial de la Universidad del Valle.";
   display: block;
   max-width: 36rem;
   margin: 1.2rem auto 0;
   padding: 0.6rem 1rem;
-  border: 1px solid #65C8FF;
+  border: 1px solid #B65CFF;
   border-radius: 8px;
-  background: rgba(11,21,48,0.7);
+  background: rgba(9, 6, 17, 0.75);
   font-size: 1rem;
   font-weight: 600;
-  color: #fff;
+  color: #F4F0FF;
+  box-shadow: 0 0 10px rgba(118, 38, 232, 0.2);
 }
 
+/* TITULOS */
 .main-content h2 {
-  color: #1E2A4A;
-  border-bottom: 3px solid #E8272A;
+  color: #7626E8;
+  border-bottom: 3px solid #B65CFF;
   padding-bottom: 0.3rem;
 }
 
+/* TABLAS */
 .main-content table th {
-  background: #1E2A4A;
-  color: #fff;
+  background: #1B1033;
+  color: #F4F0FF;
+}
+
+/* SELECCIÓN DE TEXTO */
+::selection {
+  background: #7626E8;
+  color: white;
 }
