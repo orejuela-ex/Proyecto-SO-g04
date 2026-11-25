@@ -1,4 +1,4 @@
-# Proyecto final SO 
+# Proyecto final Sistema Operativos Diurna
 Proyecto Final SO Grupo 4
 # Objetivo
 Montar dos máquinas virtuales con Linux en VirtualBox, configurarlas, publicar en Docker Hub una imagen propia, desplegarla en Kubernetes y contar lo que hicimos en este sitio.
@@ -16,7 +16,7 @@ Montar dos máquinas virtuales con Linux en VirtualBox, configurarlas, publicar 
 
 - [Sprint 0 · Arranque, paso a paso](sprint-0.md)
 - [Sprint 1 · Montaje](sprint-1.md)
-- [Sprint 2 · Servicios](sprint-2/README.md)
+- [Sprint 2 · Servicios](sprint-2.md)
 - [Sprint 3 · Cierre](sprint-3.md)
 
 
