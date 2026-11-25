@@ -9,7 +9,7 @@ Grupo 4 · VM gráfica: Debian · VM consola: AlmaLinux
 
 ## 1. VM gráfica (g04-grafica)
 
-(Qué hicimos, con nuestras palabras)
+Creamos la máquina virtual g04-grafica en VirtualBox usando la imagen ISO de Debian 13 y un disco duro virtual de 25 GB (desactivando la instalación automática). Dentro del instalador configuramos el idioma en español, el nombre del equipo (g04-grafica), la clave de administrador (root) y el usuario laura. Por último, entramos al particionado manual y dividimos el disco (sda) en tres partes: el sistema (/), la  memoria de intercambio (swap) y los archivos personales (/home).
 
 | Partición | Tamaño | Por qué |
 |---|---|---|
@@ -23,9 +23,19 @@ Particiones
 <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/a1dce653-748b-4675-a27c-3318f79cccf5" />
 
 
-(Aquí va la captura de lsblk, df -h y fstab)
+Comandos: `lsblk`, `df -h`, `cat /etc/fstab`
 
-(Explicación breve de lo que muestra)
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/7831d53a-4a28-4977-a8bd-cbd70eb58433" />
+Date
+<img width="1280" height="800" alt="g04" src="https://github.com/user-attachments/assets/22ea51e1-10c9-4968-97e2-bd02f2cc4aae" />
+
+Primero iniciamos en el usuario que ingresamos manualmente, despues inicilizamos la termminal para ingresar los comandos, primero ingresamos clear && lsblk && echo "--- df -h ---" && df -h / /home && echo "--- /etc/fstab ---" && grep -v '^#' /etc/fstab para ejecutar todos de primero, pero nos falto el date entonces lo ejecutamos por si solo 
+
+<img width="1280" height="800" alt="g04" src="https://github.com/user-attachments/assets/22ea51e1-10c9-4968-97e2-bd02f2cc4aae" />
+Instalamos los navegadores y editores con el siguiente comando (sudo apt update && sudo apt install -y chromium geany) y el prompt root@g04-grafica
+<img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/54470570-f437-4d13-b482-80826a47946d" />
+
+
 
 ## 2. VM de consola (g04-consola)
 
