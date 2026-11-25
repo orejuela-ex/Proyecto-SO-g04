@@ -15,9 +15,9 @@ Creamos la máquina virtual g04-grafica en VirtualBox usando la imagen ISO de De
 |---|---|---|
 | / | 15 G | Almacena el sistema operativos base Debian 13, los paquetes del sistema y el entorno gráfico  |
 | swap | 2 G  | Respalda la memoria RAM cuando aumenta la carga |
-| /home | 9.8  | Separa los archivos y configuraciones del usuario en este caso Laura |
+| /home | 9.8 G | Separa los archivos y configuraciones del usuario en este caso Laura |
 
-Comandos: `lsblk`, `df -h`, `cat /etc/fstab`
+
 Anexos:
 Particiones
 <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/a1dce653-748b-4675-a27c-3318f79cccf5" />
@@ -78,4 +78,4 @@ Comandos: `lsblk`, `df -h`, `cat /etc/fstab`, `make --version`, `rsync --version
 
 | Integrante | Qué hizo | Commits |
 |---|---|---|
-|  |  |  |
+| Juan Orejuela |subió las capturas al sitio y modifico la información  |  |
