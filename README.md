@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ '/recursos/css/style.css' | relative_url }}">
+
 # Proyecto final Sistema Operativos Diurna
 Proyecto Final SO Grupo 4
 # Objetivo
