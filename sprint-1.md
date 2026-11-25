@@ -19,6 +19,7 @@ Grupo 4 · VM gráfica: Debian · VM consola: AlmaLinux
 
 Comandos: `lsblk`, `df -h`, `cat /etc/fstab`
 Anexos:
+Particiones
 <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/a1dce653-748b-4675-a27c-3318f79cccf5" />
 
 
