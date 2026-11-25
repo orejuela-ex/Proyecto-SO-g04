@@ -16,8 +16,8 @@ Montar dos máquinas virtuales con Linux en VirtualBox, configurarlas, publicar 
 | Debian | Alma Linux | Rocky Linux |
 ## Páginas del proyecto
 
-- [Plan](plan-de-trabajo.md)
-- [Ficha Versión](ficha-version.md)
+- [Plan](plan/plan-de-trabajo.md)
+- [Ficha Versión](plan/ficha-version.md)
 - [Sprint 1 · Montaje](sprint-1.md)
 - [Sprint 2 · Servicios](sprint-2.md)
 - [Sprint 3 · Cierre](sprint-3.md)
