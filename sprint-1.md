@@ -1,5 +1,9 @@
 ---
 ---
+---
+layout: default
+title: Sprint 1 · Montaje
+---
 layout: default
 title: Sprint 1 · Montaje
 ---
