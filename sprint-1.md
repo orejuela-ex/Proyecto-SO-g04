@@ -1,7 +1,5 @@
 
 
-title: Sprint 1 · Montaje
----
 
 # Sprint 1 · Montaje
 
