@@ -34,8 +34,8 @@ Instalamos los navegadores y editores con el siguiente comando (sudo apt update 
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/54470570-f437-4d13-b482-80826a47946d" />
 
 También verificamos que quedaran instaladas las herramientas básicas pedidas para el proyecto (`make`, `rsync`, `curl`, `git` y `wget`):
-(ARRASTRA AQUÍ TU CAPTURA: 04-g04-grafica-entorno-paq.png)
-![Uploading 04-g04-grafica-entorno-paquetes.png…]()
+<img width="1280" height="800" alt="04-g04-grafica-entorno-paquetes" src="https://github.com/user-attachments/assets/6afd16c6-12f7-4445-8147-e7db888b9e00" />
+
 
 
 ## 2. VM de consola (g04-consola)
@@ -53,28 +53,32 @@ Herramientas: make, rsync, curl, git y wget.
 
 Comandos: `lsblk`, `df -h`, `cat /etc/fstab`, `make --version`, `rsync --version`, `curl --version`, `git --version`, `wget --version`
 
-(ARRASTRA AQUÍ TU CAPTURA: 01-g04-consola-particionado.png)
-(ARRASTRA AQUÍ TU CAPTURA: 02-g04-consola-hostname-p.png)
+<img width="1280" height="800" alt="01-g04-consola-particionado-fstab" src="https://github.com/user-attachments/assets/f2fc778f-382b-40b0-8408-c70e645bafbb" />
+
+
+<img width="1280" height="800" alt="02-g04-consola-hostname-paquetes" src="https://github.com/user-attachments/assets/1ea74328-9edc-43ed-a2de-2698d00090f4" />
 
 Una vez encendido el sistema, revisamos en la terminal que las particiones hubieran quedado bien creadas y montadas automáticamente al prender el equipo (`lsblk`, `df -h` y `cat /etc/fstab`). Después confirmamos el nombre de la máquina (`g04-consola`) e instalamos las cinco herramientas obligatorias (`make`, `rsync`, `curl`, `git` y `wget`), comprobando la versión de cada una para asegurarnos de que funcionaran bien.
 
 ## 3. Red
 
-(ARRASTRA AQUÍ TU CAPTURA: 05-g04-grafica-red-ssh.png)
-(ARRASTRA AQUÍ TU CAPTURA: 06-g04-consola-red-ssh.png)
+<img width="1280" height="800" alt="05-g04-grafica-red-ssh" src="https://github.com/user-attachments/assets/efe03131-2a2c-4527-b8c3-e93b73cac934" />
+
+<img width="1280" height="800" alt="06-g04-consola-red-ssh" src="https://github.com/user-attachments/assets/c88db331-9fbf-4b33-974f-d3dd23e82ee9" />
 
 Revisamos la conexión de red en ambas máquinas usando el comando `ip a`. Comprobamos que tanto `g04-grafica` como `g04-consola` tienen su tarjeta de red encendida y recibieron una dirección IP automática (`10.0.2.15`) gracias a VirtualBox, lo que les permite conectarse entre sí y tener salida a Internet para descargar actualizaciones y programas.
 
 ## 4. SSH
 
-(ARRASTRA AQUÍ TU CAPTURA: 05-g04-grafica-red-ssh.png)
-(ARRASTRA AQUÍ TU CAPTURA: 06-g04-consola-red-ssh.png)
+<img width="1280" height="800" alt="05-g04-grafica-red-ssh" src="https://github.com/user-attachments/assets/7796464b-158a-45a6-a9f4-17c8277681dd" />
+
+<img width="1280" height="800" alt="06-g04-consola-red-ssh" src="https://github.com/user-attachments/assets/617a10e2-18e6-4fde-8f58-68ea1b86be7c" />
 
 Activamos y encendimos el servicio SSH en los dos sistemas operativos (`ssh` en Debian y `sshd` en AlmaLinux) para poder conectarnos a las máquinas de forma remota desde otra terminal. Con el comando `systemctl status` confirmamos que el servicio aparece en verde (`active (running)`), que arranca solo cada vez que prendemos las máquinas y que está listo para recibir conexiones por el puerto 22.
 
-## 5. Instantáneas
+## 5. Instantáneas:
+<img width="1275" height="717" alt="07-Virtualbox-instantaneas" src="https://github.com/user-attachments/assets/d6bb2046-a9d1-4f19-96d7-c2bb13e4b691" />
 
-(ARRASTRA AQUÍ TU CAPTURA: 07-virtualbox-instantaneas.png)
 
 Cuando ya teníamos las dos máquinas listas, actualizadas y con todos los programas instalados, expulsamos los discos de instalación (`.iso`) para que no volvieran a arrancar desde el instalador y apagamos ambos equipos correctamente. Luego entramos a VirtualBox y guardamos una instantánea llamada `Estado-Base-Sprint1` en cada máquina (`g04-grafica1` y `g04-consola`). Esto nos sirve como copia de seguridad para volver a este punto limpio si algo sale mal en los próximos sprints.
 
