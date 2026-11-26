@@ -37,6 +37,7 @@ También verificamos que quedaran instaladas las herramientas básicas pedidas p
 (ARRASTRA AQUÍ TU CAPTURA: 04-g04-grafica-entorno-paq.png)
 ![Uploading 04-g04-grafica-entorno-paquetes.png…]()
 
+
 ## 2. VM de consola (g04-consola)
 
 Creamos la máquina virtual `g04-consola` en VirtualBox usando la imagen ISO minimal de AlmaLinux 9. La dejamos únicamente en modo texto (sin pantalla gráfica) para que gaste menos recursos del computador. Durante la instalación pusimos el idioma en español, le dimos el nombre `g04-consola`, creamos la clave de administrador (`root`) y nuestro usuario `lguetio`. Al final entramos al particionado manual para dividir el disco en cuatro partes bien organizadas:
