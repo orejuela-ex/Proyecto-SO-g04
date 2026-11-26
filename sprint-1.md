@@ -35,6 +35,7 @@ Instalamos los navegadores y editores con el siguiente comando (sudo apt update 
 
 También verificamos que quedaran instaladas las herramientas básicas pedidas para el proyecto (`make`, `rsync`, `curl`, `git` y `wget`):
 (ARRASTRA AQUÍ TU CAPTURA: 04-g04-grafica-entorno-paq.png)
+![Uploading 04-g04-grafica-entorno-paquetes.png…]()
 
 ## 2. VM de consola (g04-consola)
 
