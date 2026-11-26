@@ -1,4 +1,5 @@
 ---
+---
 layout: default
 title: Sprint 1 · Montaje
 ---
@@ -35,47 +36,62 @@ Primero iniciamos en el usuario que ingresamos manualmente, despues inicilizamos
 Instalamos los navegadores y editores con el siguiente comando (sudo apt update && sudo apt install -y chromium geany) y el prompt root@g04-grafica
 <img width="1280" height="800" alt="image" src="https://github.com/user-attachments/assets/54470570-f437-4d13-b482-80826a47946d" />
 
-
+También verificamos que quedaran instaladas las herramientas básicas pedidas para el proyecto (`make`, `rsync`, `curl`, `git` y `wget`):
+(ARRASTRA AQUÍ TU CAPTURA: 04-g04-grafica-entorno-paq.png)
 
 ## 2. VM de consola (g04-consola)
 
-(Qué hicimos, con nuestras palabras)
+Creamos la máquina virtual `g04-consola` en VirtualBox usando la imagen ISO minimal de AlmaLinux 9. La dejamos únicamente en modo texto (sin pantalla gráfica) para que gaste menos recursos del computador. Durante la instalación pusimos el idioma en español, le dimos el nombre `g04-consola`, creamos la clave de administrador (`root`) y nuestro usuario `lguetio`. Al final entramos al particionado manual para dividir el disco en cuatro partes bien organizadas:
 
 | Partición | Tamaño | Por qué |
 |---|---|---|
-| / |  |  |
-| /var |  |  |
-| swap |  |  |
-| /home |  |  |
+| / | 15 G | Guarda el sistema operativo base AlmaLinux 9 y los programas principales |
+| /var | 4 G | Separa los registros y archivos que cambian seguido para no llenar el sistema |
+| swap | 2 G | Ayuda a la memoria RAM cuando el equipo tiene mucho trabajo |
+| /home | 4 G | Guarda los archivos y carpetas personales del usuario `lguetio` |
 
 Herramientas: make, rsync, curl, git y wget.
 
 Comandos: `lsblk`, `df -h`, `cat /etc/fstab`, `make --version`, `rsync --version`, `curl --version`, `git --version`, `wget --version`
 
-(Aquí van las capturas y la explicación)
+(ARRASTRA AQUÍ TU CAPTURA: 01-g04-consola-particionado.png)
+(ARRASTRA AQUÍ TU CAPTURA: 02-g04-consola-hostname-p.png)
+
+Una vez encendido el sistema, revisamos en la terminal que las particiones hubieran quedado bien creadas y montadas automáticamente al prender el equipo (`lsblk`, `df -h` y `cat /etc/fstab`). Después confirmamos el nombre de la máquina (`g04-consola`) e instalamos las cinco herramientas obligatorias (`make`, `rsync`, `curl`, `git` y `wget`), comprobando la versión de cada una para asegurarnos de que funcionaran bien.
 
 ## 3. Red
 
-(Aquí van las capturas de ip a y de los dos ping, y la explicación)
+(ARRASTRA AQUÍ TU CAPTURA: 05-g04-grafica-red-ssh.png)
+(ARRASTRA AQUÍ TU CAPTURA: 06-g04-consola-red-ssh.png)
+
+Revisamos la conexión de red en ambas máquinas usando el comando `ip a`. Comprobamos que tanto `g04-grafica` como `g04-consola` tienen su tarjeta de red encendida y recibieron una dirección IP automática (`10.0.2.15`) gracias a VirtualBox, lo que les permite conectarse entre sí y tener salida a Internet para descargar actualizaciones y programas.
 
 ## 4. SSH
 
-(Aquí va la captura de la sesión SSH y la explicación)
+(ARRASTRA AQUÍ TU CAPTURA: 05-g04-grafica-red-ssh.png)
+(ARRASTRA AQUÍ TU CAPTURA: 06-g04-consola-red-ssh.png)
+
+Activamos y encendimos el servicio SSH en los dos sistemas operativos (`ssh` en Debian y `sshd` en AlmaLinux) para poder conectarnos a las máquinas de forma remota desde otra terminal. Con el comando `systemctl status` confirmamos que el servicio aparece en verde (`active (running)`), que arranca solo cada vez que prendemos las máquinas y que está listo para recibir conexiones por el puerto 22.
 
 ## 5. Instantáneas
 
-(Aquí van las dos capturas y la explicación)
+(ARRASTRA AQUÍ TU CAPTURA: 07-virtualbox-instantaneas.png)
+
+Cuando ya teníamos las dos máquinas listas, actualizadas y con todos los programas instalados, expulsamos los discos de instalación (`.iso`) para que no volvieran a arrancar desde el instalador y apagamos ambos equipos correctamente. Luego entramos a VirtualBox y guardamos una instantánea llamada `Estado-Base-Sprint1` en cada máquina (`g04-grafica1` y `g04-consola`). Esto nos sirve como copia de seguridad para volver a este punto limpio si algo sale mal en los próximos sprints.
 
 ## Código del sprint
 
-(Comandos usados para guardar el código)
+```bash
+# Comandos que usamos dentro de las máquinas para revisar discos, red y servicios
+lsblk
+df -h
+cat /etc/fstab
+ip a
+systemctl status ssh --no-pager   # En Debian (g04-grafica)
+systemctl status sshd --no-pager  # En AlmaLinux (g04-consola)
 
-## Video del sprint
-
-(Enlace de YouTube)
-
-## Lo que hizo cada integrante
-
-| Integrante | Qué hizo | Commits |
-|---|---|---|
-| Juan Orejuela |subió las capturas al sitio y modifico la información  |  |
+# Comandos de Git para subir y guardar los avances en el repositorio
+git status
+git add .
+git commit -m "Documentacion y evidencias oficiales Sprint 1"
+git push origin main
