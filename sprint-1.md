@@ -82,7 +82,11 @@ Activamos y encendimos el servicio SSH en los dos sistemas operativos (`ssh` en 
 
 Cuando ya teníamos las dos máquinas listas, actualizadas y con todos los programas instalados, expulsamos los discos de instalación (`.iso`) para que no volvieran a arrancar desde el instalador y apagamos ambos equipos correctamente. Luego entramos a VirtualBox y guardamos una instantánea llamada `Estado-Base-Sprint1` en cada máquina (`g04-grafica1` y `g04-consola`). Esto nos sirve como copia de seguridad para volver a este punto limpio si algo sale mal en los próximos sprints.
 
-## Código del sprint
+## Código del sprint 1
+Grafica
+<img width="1280" height="800" alt="codigo-sprint1-grafica" src="https://github.com/user-attachments/assets/b969a025-2426-4bba-9c1a-93a225714f1c" />
+Consola
+<img width="1280" height="800" alt="codigo-sprint1-consola" src="https://github.com/user-attachments/assets/d0873a4c-f08b-400e-8186-4edda8111054" />
 
 ```bash
 # Comandos que usamos dentro de las máquinas para revisar discos, red y servicios
