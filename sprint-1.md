@@ -88,7 +88,14 @@ Grafica
 Consola
 <img width="1280" height="800" alt="codigo-sprint1-consola" src="https://github.com/user-attachments/assets/d0873a4c-f08b-400e-8186-4edda8111054" />
 
+##  Video de evidencia – Sprint 1
+
+A continuación, anexamos el video donde se evidencia el proceso realizado durante el Sprint 1, incluyendo la configuración de las máquinas virtuales, la instalación de los sistemas operativos y las verificaciones realizadas.
+
+[ Ver video del Sprint 1 en YouTube](https://youtu.be/g-9nv0PGSKA)
+
 ```bash
+
 # Comandos que usamos dentro de las máquinas para revisar discos, red y servicios
 lsblk
 df -h
@@ -99,6 +106,7 @@ systemctl status sshd --no-pager  # En AlmaLinux (g04-consola)
 
 # Comandos de Git para subir y guardar los avances en el repositorio
 git status
+
 git add .
 git commit -m "Documentacion y evidencias oficiales Sprint 1"
 git push origin main
